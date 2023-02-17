@@ -1,8 +1,3 @@
-FROM noman12/atrociousbot:latest
-
-WORKDIR /usr/src/app
-RUN chmod 777 /usr/src/app
-
+FROM ghcr.io/anime-republic/mirror-hk-docker:latest
 COPY . .
-
 CMD ["bash", "start.sh"]
